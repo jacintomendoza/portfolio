@@ -1,0 +1,54 @@
+// Toolbar //////////////////////////////////////////////////
+
+mat-toolbar {
+    background-color: var(--primary-color);
+    position: sticky;
+    top: 0;
+    display: flex;
+    z-index: 10;
+    box-shadow: .5px 1px 5px black;
+    transition: background-color .5s ease-in;
+}
+
+.mat-toolbar_change {
+    background-color: var(--secondary-color);
+}
+
+mat-toolbar-row {
+    justify-content: space-between;
+}
+
+.left-side {
+    display: flex;
+}
+
+.title {
+    user-select: none;
+    cursor: pointer;
+}
+
+// Sidenav //////////////////////////////////////////////////
+
+mat-sidenav-container {
+    height: 100%;
+}
+
+mat-sidenav {
+    background-color: var(--secondary-color);
+    width: 200px;
+    display: flex;
+}
+
+mat-sidenav, mat-sidenav-content {
+    padding: 16px;
+    margin-top: auto;
+}
+
+mat-sidenav-content {
+    padding: 0px;
+}
+
+
+//  //////////////////////////////////////////////////
+
+

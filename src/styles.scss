@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    --primary-color: #669BBC;
+    --secondary-color: #BBB5BD;
+    --background-color: #5e7c71;
+    --primary-font-color: white;
+    --secondary-font-color: black;
+}
+
+html, body { 
+    min-height: 100%;
+    background-color: var(--secondary-color);
+}
+body {
+    margin: 0px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    // overflow: hidden;
+}
+
+mat-sidenav-content {
+    background-color: var(--background-color);
+}

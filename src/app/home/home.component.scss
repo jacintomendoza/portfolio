@@ -1,0 +1,87 @@
+// Welcome Page //////////////////////////////////////////////////
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/../assets/images/bokeh_lights.jpg");
+  height: 900px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text h1 {
+    font-size: 30px;
+}
+
+.hero-text p {
+    font-size: 17px;
+}
+
+.profile_img {
+    width: 200px;
+    height: auto;
+    border-radius: 100px;
+    transition: transform .5s ease;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+.profile_img:hover {
+    transform: scale(1.1) rotate(1deg);
+}
+
+// Project //////////////////////////////////////////////////
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    max-width: 300px;
+    box-shadow: .5px 1px 1px 1px black;
+    margin: 8px;
+    transition: transform .5s;
+}
+
+.card:hover {
+    transform: scale(1.005);
+}
+
+mat-card-actions {
+    position: absolute;
+    bottom: 16px;
+}
+
+// Education //////////////////////////////////////////////////
+
+
+// Other //////////////////////////////////////////////////
+
+.section-titles {
+    font-size: 40px;
+    color: var(--primary-font-color);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px 0px 0px;
+}
+
+hr {
+    width: 50%;
+}
