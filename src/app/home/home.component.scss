@@ -85,3 +85,12 @@ mat-card-actions {
 hr {
     width: 50%;
 }
+
+// Responsive //////////////////////////////////////////////////
+
+@media screen and (max-width: 500px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+  }
