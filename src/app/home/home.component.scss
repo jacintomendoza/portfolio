@@ -1,5 +1,5 @@
 // Welcome Page //////////////////////////////////////////////////
-.hero-image {
+.hero-container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/bokeh_lights.jpg");
   height: 900px;
   background-position: center;
@@ -18,7 +18,7 @@
 }
 
 .hero-text h1 {
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .hero-text p {
@@ -61,13 +61,26 @@
     transform: scale(1.005);
 }
 
+mat-card-content {
+    margin-bottom: 40px;
+}
+
 mat-card-actions {
     position: absolute;
+    // background-color: pink;
     bottom: 16px;
+    left: 10px;
 }
 
 // Education //////////////////////////////////////////////////
 
+mat-tab-group {
+    height: 1000px;
+}
+
+.education .section-titles {
+    // position: absolute;
+}
 
 // Other //////////////////////////////////////////////////
 
@@ -88,7 +101,7 @@ hr {
 
 // Responsive //////////////////////////////////////////////////
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .cards {
         display: flex;
         flex-direction: column;

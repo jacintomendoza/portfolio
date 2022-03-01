@@ -39,14 +39,15 @@ mat-sidenav {
     background-color: var(--secondary-color);
     padding: 16px;
     // display: flex;
+    // height: 100%;
 }
 
 mat-sidenav, mat-sidenav-content {
 }
 
 mat-sidenav-content {
-    padding: 0px;
-    height: 100%;
+    // padding: 0px;
+    // height: 100%;
     width: 100%;
 }
 
