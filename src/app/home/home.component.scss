@@ -1,7 +1,7 @@
 // Welcome Page //////////////////////////////////////////////////
 .hero-container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/bokeh_lights.jpg");
-  height: 900px;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,9 +26,9 @@
 }
 
 .profile_img {
-    width: 200px;
+    width: 40vw;
     height: auto;
-    border-radius: 100px;
+    border-radius: 100%;
     transition: transform .5s ease;
     box-shadow: 1px 1px 1px 1px black;
 }
@@ -54,6 +54,7 @@
     max-width: 300px;
     box-shadow: .5px 1px 1px 1px black;
     margin: 8px;
+    // transform: translateX(400%);
     transition: transform .5s;
 }
 
@@ -74,20 +75,39 @@ mat-card-actions {
 
 // Education //////////////////////////////////////////////////
 
-mat-tab-group {
-    height: 1000px;
+.education {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-.education .section-titles {
-    // position: absolute;
+.carousel-caption {
+    position: absolute;
+    top: 5%;
+    right: 15%;
+    left: 15%;
+    text-align: center;
+    h2 {
+        font-size: 50px;
+    }
+}
+
+.picsum-img-wrapper {
+    background-color: black;
+}
+
+.picsum-img-wrapper img {
+    opacity: .45;
+    width: 100%;
+
 }
 
 // Other //////////////////////////////////////////////////
 
 .section-titles {
-    font-size: 40px;
+    font-size: 60px;
     color: var(--primary-font-color);
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: .7px;
     -webkit-text-stroke-color: black;
     align-items: center;
     display: flex;

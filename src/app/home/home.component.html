@@ -4,7 +4,7 @@
             <div class="hero-text">
                 <img class="profile_img" src="assets/images/profile.jpg" alt="profile">
                 <h1 class="section-titles">Hi, I'm Jacinto</h1>
-                <p>I develop things</p>
+                <p>Full Stack Engineer</p>
             </div>
         </div>
     </section>
@@ -31,9 +31,9 @@
                 <mat-card-content>
                     <img mat-card-image src="assets/images/angular.png" alt="angular">
                     <mat-card-title>Finance Web Application</mat-card-title>
-                    <mat-card-subtitle>AngularJS, NodeJS, Express, Material, PostgreSQL</mat-card-subtitle>
+                    <mat-card-subtitle>Angular, NodeJS, Express, Material, PostgreSQL</mat-card-subtitle>
                     <p>
-                        Developed a mock finance web application as part of a capstone project that utilizes the front-end web application framework, AngularJS, and the back-end JavaScript runtime environment, NodeJS.
+                        Developed a mock finance web application as part of a capstone project that utilizes the front-end web application framework, Angular, and the back-end JavaScript runtime environment, NodeJS.
                     </p>
                 </mat-card-content>
                 <mat-card-actions>
@@ -103,22 +103,37 @@
     </section>
 
     <section class="education">
-        <h2 class="section-titles">Education</h2>
+        <h2 class="section-titles">Alma Mater</h2>
         <hr>
-        <mat-tab-group animationDuration="2000ms">
-        <mat-tab label="First">
-            <div class="hero-container">
-            </div>
-        </mat-tab>
-
-
-
-        <mat-tab label="Second">
-            <div class="hero-container">
-            </div>
-        </mat-tab>
-        <mat-tab label="Third">Content 3</mat-tab>
-        </mat-tab-group>
+        <ngb-carousel [interval]="10000" *ngIf="images">
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <img [src]="images[0]" alt="Random first slide">
+              </div>
+              <div class="carousel-caption">
+                <h2>University of Texas at Arlington</h2>
+                <h3>Bachelor of Science in Computer Science</h3>
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <img [src]="images[1]" alt="Random second slide">
+              </div>
+              <div class="carousel-caption">
+                <h2>University of Texas at Arlington</h2>
+                <h3>Bachelor of Science in Computer Science</h3>
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <img [src]="images[2]" alt="Random third slide">
+              </div>
+              <div class="carousel-caption">
+                <h2>University of Texas at Arlington</h2>
+                <h3>Bachelor of Science in Computer Science</h3>
+              </div>
+            </ng-template>
+          </ngb-carousel>
         
     </section>
 
