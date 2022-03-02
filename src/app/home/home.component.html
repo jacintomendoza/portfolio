@@ -105,7 +105,7 @@
     <section class="education">
         <h2 class="section-titles">Alma Mater</h2>
         <hr>
-        <ngb-carousel [interval]="10000" *ngIf="images">
+        <ngb-carousel [interval]="2000" *ngIf="images">
             <ng-template ngbSlide>
               <div class="picsum-img-wrapper">
                 <img [src]="images[0]" alt="Random first slide">
@@ -135,6 +135,10 @@
             </ng-template>
           </ngb-carousel>
         
+    </section>
+
+    <section>
+        Test
     </section>
 
 </main>
