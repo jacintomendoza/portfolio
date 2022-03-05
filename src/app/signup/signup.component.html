@@ -1,0 +1,61 @@
+<h2>For authorized users only</h2>
+
+<main>
+    <section class="welcome">
+        <div class="hero-container">
+            <div class="hero-text">
+                  <mat-stepper linear #stepper>
+                    <mat-step [stepControl]="firstFormGroup" [editable]="isEditable">
+                      <form [formGroup]="firstFormGroup">
+                        <ng-template matStepLabel>Fill out your name</ng-template>
+
+                        <mat-form-field appearance="fill">
+                            <mat-label>First Name</mat-label>
+                            <input matInput formControlName="firstName" placeholder="First name" required>
+                        </mat-form-field>
+
+                        <mat-form-field appearance="fill">
+                            <mat-label>Last Name</mat-label>
+                            <input matInput formControlName="lastName" placeholder="Last name" required>
+                        </mat-form-field>
+
+                        <mat-form-field appearance="fill">
+                            <mat-label>Email Address</mat-label>
+                            <input matInput formControlName="email" placeholder="Email Address" required>
+                        </mat-form-field>
+
+                        <mat-form-field appearance="fill">
+                            <mat-label>Password</mat-label>
+                            <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" placeholder="Password" required>
+                            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                            </button>
+                        </mat-form-field>
+
+                        <mat-form-field appearance="fill">
+                            <mat-label>Confirm Password</mat-label>
+                            <input matInput [type]="hide2 ? 'password' : 'text'" formControlName="password" placeholder="Password" required>
+                            <button mat-icon-button matSuffix (click)="hide2 = !hide2" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide2">
+                                <mat-icon>{{hide2 ? 'visibility_off' : 'visibility'}}</mat-icon>
+                            </button>
+                        </mat-form-field>
+                        
+                        <div>
+                            <button mat-button matStepperNext>Next</button>
+                        </div>
+                      </form>
+                    </mat-step>
+
+                    <mat-step>
+                        <ng-template matStepLabel>Done</ng-template>
+                        <p>You are now done.</p>
+                        <div>
+                            <button mat-button matStepperPrevious>Back</button>
+                            <button mat-button (click)="stepper.reset()">Reset</button>
+                        </div>
+                    </mat-step>
+                </mat-stepper>                  
+            </div>
+        </div>
+    </section>
+</main>
