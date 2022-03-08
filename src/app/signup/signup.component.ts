@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AccountService } from '../account.service';
+import { Account } from '../account.model';
 
 @Component({
   selector: 'app-signup',
@@ -11,9 +13,13 @@ export class SignupComponent implements OnInit {
   secondFormGroup: FormGroup;
   hide = true;
   hide2 = true;
-  isEditable = true;
+  newAccount: Account = { id: 0, firstName: '', lastName: '', email: '', password: '' };
 
-  constructor(private _formBuilder: FormBuilder) {}
+  constructor(
+    private _formBuilder: FormBuilder,
+    private accountService: AccountService) {}
+
+  accounts: Account[] = [];
 
   ngOnInit() {
     this.firstFormGroup = this._formBuilder.group({
@@ -37,6 +43,17 @@ export class SignupComponent implements OnInit {
     }
 
   submit() {
+    console.log(this.firstFormGroup.value);
+    this.newAccount = this.firstFormGroup.value;
+    
+    this.accountService.createAccount(this.newAccount).subscribe((payload) => {
+    });
+  }
+
+  getAccounts() {
+    this.accountService.getAccounts().subscribe(payload => {
+      this.accounts = payload;
+    })
   }
 
 }

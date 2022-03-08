@@ -5,9 +5,9 @@
         <div class="hero-container">
             <div class="hero-text">
                   <mat-stepper linear #stepper>
-                    <mat-step [stepControl]="firstFormGroup" [editable]="isEditable">
+                    <mat-step [stepControl]="firstFormGroup">
                       <form [formGroup]="firstFormGroup">
-                        <ng-template matStepLabel>Fill out your name</ng-template>
+                        <ng-template matStepLabel>Create your account</ng-template>
 
                         <mat-form-field appearance="fill">
                             <mat-label>First Name</mat-label>
@@ -50,8 +50,24 @@
                     </mat-step>
 
                     <mat-step>
-                        <ng-template matStepLabel>Done</ng-template>
-                        <p>You are now done.</p>
+                        <ng-template matStepLabel>Review details</ng-template>
+                        <h1>Review Details.</h1>
+                        <mat-list>
+                            <mat-list-item>
+                                <strong>First Name: </strong>
+                                {{ this.firstFormGroup.value.firstName }}
+                            </mat-list-item>
+
+                            <mat-list-item>
+                                <strong>Last Name: </strong>
+                                {{ this.firstFormGroup.value.lastName }}
+                            </mat-list-item>
+
+                            <mat-list-item>
+                                <strong>Email: </strong>
+                                {{ this.firstFormGroup.value.email }}
+                            </mat-list-item>
+                        </mat-list>
                         <div>
                             <button mat-button matStepperPrevious>Back</button>
                             <button mat-button (click)="stepper.reset()">Reset</button>
@@ -61,5 +77,27 @@
                 </mat-stepper>                  
             </div>
         </div>
+    </section>
+
+    <section>
+        
+        <button mat-button (click)="getAccounts()" style="background-color: pink">Click Me to Retrieve Accounts!</button>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Accounts created
+              </mat-panel-title>
+              <mat-panel-description>
+                <!-- This is a summary of the content -->
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <div *ngFor="let account of accounts">
+                <strong>First Name:</strong> {{account.firstName}}<br>
+                <strong>Last Name:</strong> {{account.lastName}}<br>
+                <strong>Email:</strong> {{account.email}}<br>
+                <strong>Password(encrypted):</strong> {{account.password}}<br>
+                <br>
+            </div>
+        </mat-expansion-panel>
     </section>
 </main>
