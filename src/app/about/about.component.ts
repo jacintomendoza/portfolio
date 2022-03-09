@@ -38,7 +38,6 @@ export class AboutComponent implements OnInit {
 
   @HostListener("window:scroll", [])
   onWindowScroll(){
-    console.log(window.scrollY);
     if (window.scrollY > 2){
       this.isOpen = true;
     }
