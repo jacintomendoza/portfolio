@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AccountService } from '../account.service';
 import { Account } from '../account.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -14,10 +15,16 @@ export class SignupComponent implements OnInit {
   hide = true;
   hide2 = true;
   newAccount: Account = { id: 0, firstName: '', lastName: '', email: '', password: '' };
+  isLoadingAccounts: boolean = false;
+  isUploadingAccount: boolean = false;
+  isUploadingAccount2: boolean = true;
+
+
 
   constructor(
     private _formBuilder: FormBuilder,
-    private accountService: AccountService) {}
+    private accountService: AccountService,
+    private router: Router) {}
 
   accounts: Account[] = [];
 
@@ -43,15 +50,18 @@ export class SignupComponent implements OnInit {
     }
 
   submit() {
-    console.log(this.firstFormGroup.value);
+    this.isUploadingAccount = true;
     this.newAccount = this.firstFormGroup.value;
-    
     this.accountService.createAccount(this.newAccount).subscribe((payload) => {
+      this.isUploadingAccount = false;
+      this.router.navigate(['/home']);
     });
   }
 
   getAccounts() {
+    this.isLoadingAccounts = true;
     this.accountService.getAccounts().subscribe(payload => {
+      this.isLoadingAccounts = false;
       this.accounts = payload;
     })
   }

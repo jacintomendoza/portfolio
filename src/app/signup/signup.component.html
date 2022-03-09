@@ -1,10 +1,10 @@
-<h2>For authorized users only</h2>
 
 <main>
     <section class="welcome">
         <div class="hero-container">
             <div class="hero-text">
-                  <mat-stepper linear #stepper>
+                <mat-spinner *ngIf="isUploadingAccount"></mat-spinner>
+                <mat-stepper linear #stepper>
                     <mat-step [stepControl]="firstFormGroup">
                       <form [formGroup]="firstFormGroup">
                         <ng-template matStepLabel>Create your account</ng-template>
@@ -50,6 +50,7 @@
                     </mat-step>
 
                     <mat-step>
+                        
                         <ng-template matStepLabel>Review details</ng-template>
                         <h1>Review Details.</h1>
                         <mat-list>
@@ -80,8 +81,9 @@
     </section>
 
     <section>
-        
-        <button mat-button (click)="getAccounts()" style="background-color: pink">Click Me to Retrieve Accounts!</button>
+        <button mat-button (click)="getAccounts()" style="background-color: pink">Click Me to Retrieve Accounts!
+            <mat-spinner *ngIf="isLoadingAccounts"></mat-spinner>
+        </button>
         <mat-expansion-panel>
             <mat-expansion-panel-header>
               <mat-panel-title>
@@ -91,6 +93,7 @@
                 <!-- This is a summary of the content -->
               </mat-panel-description>
             </mat-expansion-panel-header>
+            
             <div *ngFor="let account of accounts">
                 <strong>First Name:</strong> {{account.firstName}}<br>
                 <strong>Last Name:</strong> {{account.lastName}}<br>
@@ -100,4 +103,5 @@
             </div>
         </mat-expansion-panel>
     </section>
+
 </main>

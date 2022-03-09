@@ -7,7 +7,6 @@
   position: relative;
 }
 
-
 .hero-text {
     text-align: center;
     position: absolute;
@@ -16,14 +15,6 @@
     transform: translate(-50%, -50%);
     // color: white;
   }
-
-.hero-text h1 {
-    font-size: 35px;
-}
-
-.hero-text p {
-    font-size: 17px;
-}
 
 .profile_img {
     width: 40vw;
@@ -46,4 +37,13 @@ form {
 
 mat-form-field {
     margin: 0px 0px 10px 0px;
+}
+
+mat-spinner {
+    stroke: red;
+}
+
+.mat-progress-spinner circle, .mat-spinner circle {
+    stroke: red;
+    color: red;
 }
