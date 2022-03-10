@@ -1,18 +1,21 @@
-<main [@openClose]="isOpen ? 'open' : 'closed'">
+<main>
     <section class="welcome">
         <div class="hero-container">
             <div class="hero-text">
                 <img class="profile_img" src="assets/images/profile.jpg" alt="profile">
                 <h1 class="section-titles">Hi, I'm Jacinto</h1>
-                <p>Full Stack Engineer</p>
+                <h2>Full Stack Engineer</h2>
+                <br>
+                <p>This website is still under development.  Please feel free to look around. (:</p>
+                <p>Built with Angular/NodeJS.</p>
             </div>
         </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" [@openClose]="isOpen ? 'open' : 'closed'">
         <h2 class="section-titles">Highlighted Projects</h2>
         <hr>
-        <div class="cards">
+        <div class="cards"  >
             <mat-card class="card">
                 <mat-card-content>
                     <img mat-card-image src="assets/images/aws.png" alt="aws">
@@ -137,8 +140,15 @@
         
     </section>
 
-    <section>
-        New Section Here...
+    <section class="socials">
+        <h2 class="section-titles">Socials</h2>
+        <hr>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/jacinto-mendoza/" class="fa fa-linkedin-square fa-4x"></a>
+            <a href="https://www.instagram.com/joshmendozer/" class="fa fa-instagram fa-4x"></a>
+            <a href="https://www.facebook.com/josh.mendoza.3110" class="fa fa-facebook-square fa-4x"></a>
+            <a href="https://github.com/jacintomendoza" class="fa fa-github-square fa-4x"></a>
+        </div>
     </section>
 
 </main>

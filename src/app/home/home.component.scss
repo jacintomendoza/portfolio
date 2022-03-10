@@ -21,6 +21,10 @@
     font-size: 35px;
 }
 
+.hero-text h2 {
+    font-size: 20px;
+}
+
 .hero-text p {
     font-size: 17px;
 }
@@ -100,6 +104,23 @@ mat-card-actions {
     opacity: .45;
     width: 100%;
     // max-height: 300vh;
+}
+
+// Socials //////////////////////////////////////////////////
+
+.socials {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    i {
+        width: 100px;
+    }
+    a {
+        color: black;
+        margin: 0px 10px 0px 10px;
+
+    }
+
 }
 
 // Other //////////////////////////////////////////////////

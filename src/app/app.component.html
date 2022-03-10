@@ -43,19 +43,20 @@
 
 <!-- Sidenav -->
 
-<mat-sidenav-container fullscreen cdkScrollable>
+<mat-sidenav-container>
   <mat-sidenav mode="over" [(opened)]="opened" position="end">
     <mat-nav-list>
       <a mat-list-item routerLink="home">Home</a>
       <a mat-list-item routerLink="about">About</a>
       <a mat-list-item routerLink="signup">Sign up</a>
-      <a mat-list-item routerLink="/">Projects(NA)</a>
+      <!-- <a mat-list-item routerLink="/">Projects(NA)</a> -->
     </mat-nav-list>
   </mat-sidenav>
     
-  <mat-sidenav-content>
+  <mat-sidenav-content fullscreen>
     <router-outlet></router-outlet>
     <footer>
+      <hr #g>
       <p>Copyright &copy; 2022 All Rights Reserved by Jacinto Mendoza</p>
       <div class=footer-links>
         <a routerLink="/home">Home</a>

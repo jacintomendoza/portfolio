@@ -9,19 +9,18 @@ import { DOCUMENT } from '@angular/common';
   animations: [
     trigger('openClose', [
       state('open', style({
-        transform: 'translateY(0)',
-        height: '200px',
+        transform: 'translateY(0%)',
         opacity: 1,
-        backgroundColor: 'blue'
+        // backgroundColor: 'blue'
       })),
       state('closed', style({
         transform: 'translateY(5%)',
-        height: '200px',
+        // height: '10px',
         opacity: 0,
-        backgroundColor: 'blue'
+        // backgroundColor: 'blue'
       })),
       transition('closed => open', [
-        animate('500ms ease-in-out'),
+        animate('3s ease-in-out'),
       ]),
       transition('open => closed', [
         animate('0.5s')
@@ -30,19 +29,22 @@ import { DOCUMENT } from '@angular/common';
   ],
 })
 export class HomeComponent implements OnInit {
-  isOpen = true;
+  isOpen = false;
   images = ['graduation_1.jpg', 'graduation_2.jpg', 'graduation_3.jpg'].map((n) => `assets/images/${n}`);
 
-  constructor(@Inject(DOCUMENT) private document: Document) { }
-
+  constructor() { }
+  @Inject(DOCUMENT) private document: Document
   ngOnInit(): void {
   }
 
   @HostListener("window:scroll", [])
   onWindowScroll(){
-    console.log(window.scrollY)
-    if (window.scrollY > 2){
+    console.log("HOME", window.scrollY)
+    if (window.scrollY > 0){
       this.isOpen = true;
+    }
+    else {
+      this.isOpen = false;
     }
   }
 
