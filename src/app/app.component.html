@@ -28,14 +28,13 @@
     <div class="left-side">
       <!-- <img height = 30px src="assets/images/icon.png"> -->
       <h1 class="title">
-        Jacinto Mendoza
+        <a routerLink="home" style="text-decoration: none; color: inherit">Jacinto Mendoza</a>
       </h1>
     </div>
 
     <div class="right-side">
       <a mat-button routerLink="home">Home</a>
       <a mat-button routerLink="about">About</a>
-      <!-- <a mat-button routerLink="/login">Log In/Signup Up</a> -->
       <button mat-icon-button><mat-icon (click)="opened=!opened">menu</mat-icon></button>
     </div>
   </mat-toolbar-row>
@@ -49,6 +48,7 @@
       <a mat-list-item routerLink="home">Home</a>
       <a mat-list-item routerLink="about">About</a>
       <a mat-list-item routerLink="signup">Sign up</a>
+      <a mat-list-item routerLink="signin">Sign in</a>
       <!-- <a mat-list-item routerLink="/">Projects(NA)</a> -->
     </mat-nav-list>
   </mat-sidenav>
@@ -56,7 +56,7 @@
   <mat-sidenav-content fullscreen>
     <router-outlet></router-outlet>
     <footer>
-      <hr #g>
+      <hr>
       <p>Copyright &copy; 2022 All Rights Reserved by Jacinto Mendoza</p>
       <div class=footer-links>
         <a routerLink="/home">Home</a>

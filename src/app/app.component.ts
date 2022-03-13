@@ -20,7 +20,7 @@ export class AppComponent {
   @HostListener("window:scroll", [])
   onWindowScroll(){
     console.log(window.scrollY);
-    if (window.scrollY > 1000){
+    if (window.scrollY > 100){
       this.toolbar_variable=true;
     }
     else {

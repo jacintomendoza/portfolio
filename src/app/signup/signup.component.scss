@@ -1,5 +1,5 @@
 .hero-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/bokeh_lights.jpg");
+  background-image: linear-gradient(rgba(112, 107, 63, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/bokeh_lights.jpg");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,19 +13,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    // color: white;
-  }
-
-.profile_img {
-    width: 40vw;
-    height: auto;
-    border-radius: 100%;
-    transition: transform .5s ease;
-    box-shadow: 1px 1px 1px 1px black;
-}
-
-.profile_img:hover {
-    transform: scale(1.1) rotate(1deg);
 }
 
 // Mat-form-field
@@ -37,10 +24,6 @@ form {
 
 mat-form-field {
     margin: 0px 0px 10px 0px;
-}
-
-mat-spinner {
-    stroke: red;
 }
 
 .mat-progress-spinner circle, .mat-spinner circle {
