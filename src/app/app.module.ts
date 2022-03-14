@@ -12,6 +12,9 @@ import { AboutComponent } from './about/about.component';
 import { SignupComponent } from './signup/signup.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SigninComponent } from './signin/signin.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { EducationComponent } from './education/education.component';
+
 
 
 @NgModule({
@@ -20,7 +23,9 @@ import { SigninComponent } from './signin/signin.component';
     HomeComponent,
     AboutComponent,
     SignupComponent,
-    SigninComponent
+    SigninComponent,
+    ProjectsComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,

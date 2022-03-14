@@ -14,8 +14,22 @@ html, body {
 body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    // width: 100vw; // BAD IDEA SCROLL BAR WIDTH
     background-color: var(--primary-color);
+}
+
+.section-titles {
+    font-size: 60px;
+    color: var(--primary-font-color);
+    -webkit-text-stroke-width: .7px;
+    -webkit-text-stroke-color: black;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px 0px 0px;
+}
+
+hr {
+    width: 50%;
 }
 
 

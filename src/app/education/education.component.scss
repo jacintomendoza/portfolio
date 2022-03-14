@@ -1,0 +1,26 @@
+
+.education {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 5%;
+    right: 15%;
+    left: 15%;
+    text-align: center;
+    h2 {
+        font-size: 50px;
+    }
+}
+
+.picsum-img-wrapper {
+    background-color: black;
+}
+
+.picsum-img-wrapper img {
+    opacity: .45;
+    width: 100%;
+}

@@ -1,6 +1,7 @@
 import { Component, OnInit, HostBinding, Inject, HostListener } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { DOCUMENT } from '@angular/common';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-home',
@@ -30,11 +31,12 @@ import { DOCUMENT } from '@angular/common';
 })
 export class HomeComponent implements OnInit {
   isOpen = false;
-  images = ['graduation_1.jpg', 'graduation_2.jpg', 'graduation_3.jpg'].map((n) => `assets/images/${n}`);
+  
 
   constructor() { }
   @Inject(DOCUMENT) private document: Document
   ngOnInit(): void {
+    AOS.init();
   }
 
   @HostListener("window:scroll", [])

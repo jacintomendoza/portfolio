@@ -2,7 +2,7 @@
 
 mat-toolbar {
     background-color: var(--primary-color);
-    position: sticky;
+    position: fixed;
     top: 0;
     display: flex;
     z-index: 2;
@@ -13,6 +13,7 @@ mat-toolbar {
 
 .mat-toolbar_change {
     background-color: white;
+    opacity: 90%;
 }
 
 mat-toolbar-row {
