@@ -7,13 +7,17 @@ mat-toolbar {
     display: flex;
     z-index: 2;
     box-shadow: .5px 1px 5px black;
-    transition: background-color .5s ease-in;
+    transition: background-color .5s ease-in, opacity .5s ease-in;
     overflow: hidden;
+}
+
+mat-toolbar:hover {
+    opacity: 100%;
 }
 
 .mat-toolbar_change {
     background-color: white;
-    opacity: 90%;
+    opacity: 20%;
 }
 
 mat-toolbar-row {

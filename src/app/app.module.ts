@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SigninComponent } from './signin/signin.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { EducationComponent } from './education/education.component';
+import { ParallaxDirective } from './parallax.directive';
 
 
 
@@ -25,7 +26,8 @@ import { EducationComponent } from './education/education.component';
     SignupComponent,
     SigninComponent,
     ProjectsComponent,
-    EducationComponent
+    EducationComponent,
+    ParallaxDirective
   ],
   imports: [
     BrowserModule,
