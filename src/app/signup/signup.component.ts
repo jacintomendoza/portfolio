@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class SignupComponent implements OnInit {
   firstFormGroup: FormGroup;
-  secondFormGroup: FormGroup;
+  // secondFormGroup: FormGroup;
   hide = true;
   hide2 = true;
   newAccount: Account = { id: 0, firstName: '', lastName: '', email: '', password: '' };

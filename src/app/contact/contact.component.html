@@ -1,0 +1,44 @@
+<section class="contact" id="contact">
+    <div class="container">
+        <mat-card data-aos="fade-right">
+            <mat-card-content>
+                <mat-card-header>
+                    <mat-card-title class="title">Contact Me! (NA, please use email)</mat-card-title>
+                </mat-card-header>
+    
+                <mat-form-field appearance="fill">
+                    <mat-label>Full Name</mat-label>
+                    <input matInput formControlName="fullName" placeholder="Full Name" required>
+                </mat-form-field>
+    
+                <mat-form-field appearance="fill">
+                    <mat-label>Email Address</mat-label>
+                    <input matInput formControlName="email" placeholder="Email Address" required>
+                    <mat-error *ngIf="formGroup.controls['email'].hasError('email')">Please enter a valid email address.</mat-error>
+                </mat-form-field>
+    
+                <mat-form-field appearance="fill">
+                    <mat-label>Leave a comment</mat-label>
+                    <textarea matInput class="comment" formControlName="comment" placeholder="Leave a comment" maxlength="900" #input required></textarea>
+                    <mat-hint align="end">{{input.value?.length || 0}}/900</mat-hint>
+                </mat-form-field>
+    
+                <button style="background-color: var(--primary-color);" mat-button (click)="submit()">Send message</button>
+                <br>
+                <mat-card-title>-- OR --</mat-card-title>
+                <div class="alternatives">
+                    <a style="color:blue" href="mailto:jacinto.josh.mendoza@gmail.com">jacinto.josh.mendoza@gmail.com</a>
+                    <a style="cursor: pointer;" (click)="openSnackBar()" [cdkCopyToClipboard]="email"><i class="fa-solid fa-copy fa-2x" style="color: var(--primary-color);"></i></a>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    
+        <div class="icons" data-aos="fade-left">
+            <a href="https://www.linkedin.com/in/jacinto-mendoza/" class="fa fa-linkedin-square fa-4x"></a>
+            <a href="https://www.instagram.com/joshmendozer/" class="fa-brands fa-instagram-square fa-4x"></a>
+            <a href="https://www.facebook.com/josh.mendoza.3110" class="fa fa-facebook-square fa-4x"></a>
+            <a href="https://github.com/jacintomendoza" class="fa fa-github-square fa-4x"></a>
+        </div>
+    </div> 
+    
+</section>

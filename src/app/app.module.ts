@@ -16,6 +16,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { EducationComponent } from './education/education.component';
 import { ParallaxDirective } from './parallax.directive';
 import { IntroComponent } from './intro/intro.component';
+import { ContactComponent } from './contact/contact.component';
+import { ClipboardModule } from '@angular/cdk/clipboard';
 
 
 
@@ -29,7 +31,8 @@ import { IntroComponent } from './intro/intro.component';
     ProjectsComponent,
     EducationComponent,
     ParallaxDirective,
-    IntroComponent
+    IntroComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,8 @@ import { IntroComponent } from './intro/intro.component';
     FormsModule,
     NgbModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ClipboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
