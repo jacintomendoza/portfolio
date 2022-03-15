@@ -15,6 +15,7 @@ import { SigninComponent } from './signin/signin.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { EducationComponent } from './education/education.component';
 import { ParallaxDirective } from './parallax.directive';
+import { IntroComponent } from './intro/intro.component';
 
 
 
@@ -27,7 +28,8 @@ import { ParallaxDirective } from './parallax.directive';
     SigninComponent,
     ProjectsComponent,
     EducationComponent,
-    ParallaxDirective
+    ParallaxDirective,
+    IntroComponent
   ],
   imports: [
     BrowserModule,
