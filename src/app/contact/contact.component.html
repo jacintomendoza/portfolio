@@ -5,23 +5,27 @@
                 <mat-card-header>
                     <mat-card-title class="title">Contact Me! (NA, please use email)</mat-card-title>
                 </mat-card-header>
+                <form class="form" [formGroup]="formGroup">
+
+                    <mat-form-field appearance="fill">
+                        <mat-label>Full Name</mat-label>
+                        <input matInput formControlName="fullName" placeholder="Full Name" required>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill">
+                        <mat-label>Email Address</mat-label>
+                        <input matInput formControlName="email" placeholder="Email Address" required>
+                        <mat-error *ngIf="formGroup.controls['email'].hasError('email')">Please enter a valid email address.</mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill">
+                        <mat-label>Leave a comment</mat-label>
+                        <textarea matInput class="comment" formControlName="comment" placeholder="Leave a comment" maxlength="900" #input required></textarea>
+                        <mat-hint align="end">{{input.value?.length || 0}}/900</mat-hint>
+                    </mat-form-field>
+                </form>
     
-                <mat-form-field appearance="fill">
-                    <mat-label>Full Name</mat-label>
-                    <input matInput formControlName="fullName" placeholder="Full Name" required>
-                </mat-form-field>
     
-                <mat-form-field appearance="fill">
-                    <mat-label>Email Address</mat-label>
-                    <input matInput formControlName="email" placeholder="Email Address" required>
-                    <mat-error *ngIf="formGroup.controls['email'].hasError('email')">Please enter a valid email address.</mat-error>
-                </mat-form-field>
-    
-                <mat-form-field appearance="fill">
-                    <mat-label>Leave a comment</mat-label>
-                    <textarea matInput class="comment" formControlName="comment" placeholder="Leave a comment" maxlength="900" #input required></textarea>
-                    <mat-hint align="end">{{input.value?.length || 0}}/900</mat-hint>
-                </mat-form-field>
     
                 <button style="background-color: var(--primary-color);" mat-button (click)="submit()">Send message</button>
                 <br>

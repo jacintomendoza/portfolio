@@ -19,8 +19,6 @@ export class SignupComponent implements OnInit {
   isUploadingAccount: boolean = false;
   isUploadingAccount2: boolean = true;
 
-
-
   constructor(
     private _formBuilder: FormBuilder,
     private accountService: AccountService,

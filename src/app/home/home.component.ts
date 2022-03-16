@@ -39,16 +39,16 @@ export class HomeComponent implements OnInit {
     AOS.init();
   }
 
-  @HostListener("window:scroll", [])
-  onWindowScroll(){
-    console.log("HOME", window.scrollY)
-    if (window.scrollY > 0){
-      this.isOpen = true;
-    }
-    else {
-      this.isOpen = false;
-    }
-  }
+  // @HostListener("window:scroll", [])
+  // onWindowScroll(){
+  //   console.log("HOME", window.scrollY)
+  //   if (window.scrollY > 0){
+  //     this.isOpen = true;
+  //   }
+  //   else {
+  //     this.isOpen = false;
+  //   }
+  // }
 
 
 }

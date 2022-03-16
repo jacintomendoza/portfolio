@@ -2,92 +2,18 @@
 <section class="projects" id="projects">
     <h2 class="section-titles" data-aos="flip-left">Projects</h2>
     <hr>
-    <div class="cards" data-aos="fade-up" data-aos-anchor-placement="top-center">
-        <mat-card class="card">
-            <mat-card-content>
-                <img mat-card-image src="assets/images/aws.png" alt="aws">
-                <mat-card-title>ETL Pipeline</mat-card-title>
-                <mat-card-subtitle>AWS</mat-card-subtitle>
-                <p>
-                    Created an end-to-end batch ETL solution via Amazon Web Services (AWS) from an existing on-premises IT infrastructure. This project managed raw data such as semi-structured and structured data to be transformed and loaded using multiple AWS services such as Redshift, DynamoDB, RDS, EMR, QuickSight, and Lambda for data analytics.
-                </p>
+    <div *ngFor="let project of projects">
+        <mat-card class="card" data-aos="fade-up">
+            <img mat-card-image class="image" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom" src={{project.imgUrl}}>
+            <mat-card-content class="content" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
+                <mat-card-title >{{project.title}}</mat-card-title>
+                <mat-card-subtitle>{{project.topics}}</mat-card-subtitle>
+                <p>{{project.description}}</p>
+                <mat-card-actions align="end">
+                    <a mat-button *ngIf="project.repoLink !== ''" href={{project.repoLink}}>Repo</a>
+                    <a mat-button *ngIf="project.liveLink !== ''" href={{project.liveLink}}>Live</a>
+                </mat-card-actions>
             </mat-card-content>
-            <mat-card-actions>
-                <button mat-button></button>
-            </mat-card-actions>
-        </mat-card>
-
-        <mat-card class="card">
-            <mat-card-content>
-                <img mat-card-image src="assets/images/angular.png" alt="angular">
-                <mat-card-title>Finance Web Application</mat-card-title>
-                <mat-card-subtitle>Angular, NodeJS, Express, Material, PostgreSQL</mat-card-subtitle>
-                <p>
-                    Developed a prototype finance web application as part of a capstone project that utilizes the front-end web application framework, Angular, and the back-end JavaScript runtime environment, NodeJS.
-                </p>
-            </mat-card-content>
-            <mat-card-actions>
-                <a mat-button href="https://github.com/falconInvestments/falcon-frontend">Repo</a>
-            </mat-card-actions>
-        </mat-card>
-
-        <mat-card class="card">
-            <mat-card-content>
-                <img mat-card-image src="assets/images/ice_cream.png" alt="ice_cream">
-                <mat-card-title>GUI Ice Cream Application</mat-card-title>
-                <mat-card-subtitle>C++, GTK, gtkmm</mat-card-subtitle>
-                <p>
-                    Developed a C++ GUI program via gtkmm that displays to customers a user interface for creating order tickets from an ice cream shop. Created for my object-oriented programming course in which had a score percentage above 150 due to the many extra features added into the program.
-                </p>
-            </mat-card-content>
-            <mat-card-actions>
-                <a mat-button href="https://github.com/jacintomendoza/ice-cream-emporium">Repo</a>
-            </mat-card-actions>
         </mat-card>
     </div>
-
-    <div class="cards" data-aos="fade-up" data-aos-anchor-placement="top-center">
-        <mat-card class="card">
-            <mat-card-content>
-                <img mat-card-image src="assets/images/mysql.png" alt="mysql">
-                <mat-card-title>Airline Reservation Database</mat-card-title>
-                <mat-card-subtitle>MySQL</mat-card-subtitle>
-                <p>
-                    Designed and implemented a relational database system for an online airline travel reservation system. Project included creating an ER/EER schema diagram, implementing MySQL, and running queries.
-                </p>
-            </mat-card-content>
-            <mat-card-actions>
-                <button mat-button></button>
-            </mat-card-actions>
-        </mat-card>
-
-        <mat-card class="card">
-            <mat-card-content>
-                <img mat-card-image src="assets/images/android.png" alt="android">
-                <mat-card-title>Service Application</mat-card-title>
-                <mat-card-subtitle>Android, Java</mat-card-subtitle>
-                <p>
-                    Developed an Android application with a small team in which users can initiate service requests for their home or small business and calculate the cost. Created using the agile software development process.
-                </p>
-            </mat-card-content>
-            <mat-card-actions>
-                <button mat-button></button>
-            </mat-card-actions>
-        </mat-card>
-
-        <mat-card class="card">
-            <mat-card-content>
-                <img mat-card-image src="assets/images/junit.png" alt="junit">
-                <mat-card-title>JUnit Program Testing</mat-card-title>
-                <mat-card-subtitle>Java</mat-card-subtitle>
-                <p>
-                    Ensured that a given code has full coverage for all possible inputs using JUnit testing through the Eclipse IDE platform. Involved creating a Control Flow Graph for each individual method as well as for the main method, executing JUnit source code and correcting any detected faults within the program.
-                </p>
-            </mat-card-content>
-            <mat-card-actions>
-                <button mat-button></button>
-            </mat-card-actions>
-        </mat-card>
-    </div>
-    
 </section>
