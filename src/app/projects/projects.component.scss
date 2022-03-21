@@ -4,7 +4,7 @@
     align-items: center;
     margin-top: 16px;
     background-color: #567167;
-    padding: 0 20px 0 20px;
+    padding: 10vh 5vw;
 }
 
 .card {
@@ -13,10 +13,13 @@
     padding: 0 0 0 0;
     overflow: hidden;
     margin: 0px 0px 20px 0;
+    max-height: 40vh;
 }
 
 .image {
     margin: 0 0 0 0;
+    max-width: 300px;
+    min-width: 300px;
 }
 
 .content {

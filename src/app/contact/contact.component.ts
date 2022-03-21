@@ -36,8 +36,8 @@ export class ContactComponent implements OnInit {
     this.newContact = this.formGroup.value;
     this.profileService.createContact(this.newContact).subscribe((payload) => {
       this.isUploadingContact = false;
+      this._snackBar.open("Sent!", "Close");
     })
-    this._snackBar.open("Sent!", "Close");
 
   }
   openSnackBar() {

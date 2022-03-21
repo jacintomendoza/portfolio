@@ -2,9 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center; // vert center
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
-    padding: 0px 30px;
+    padding: 0px 100px;
 }
 
 .title {
@@ -12,6 +12,7 @@
 }
 
 mat-card {
+    max-width: 500px;
     width: 60vw;
     height: auto;
     padding: 40px;
@@ -21,6 +22,7 @@ mat-card {
 }
 
 .profile_img {
+    max-width: 400px;
     width: 30vw;
     height: auto;
     border-radius: 100%;
@@ -49,6 +51,7 @@ a {
     .about {
         display: flex;
         flex-direction: column;
+        height: 100vh;
     }
 
     mat-card {
