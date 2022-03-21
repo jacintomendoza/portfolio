@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Contact } from './contact.model';
+import { ProfileService } from '../profile.service';
 
 @Component({
   selector: 'app-contact',
@@ -8,13 +10,17 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
+
+  isUploadingContact: boolean = false;
+  newContact: Contact = { id: '', fullName: '', email: '', comment: '' }
   
   email = "jacinto.josh.mendoza@gmail.com"
   formGroup: FormGroup;
 
   constructor(
     private _snackBar: MatSnackBar,
-    private _formBuilder: FormBuilder
+    private _formBuilder: FormBuilder,
+    private profileService: ProfileService
     ) { }
 
   ngOnInit(): void {
@@ -26,6 +32,12 @@ export class ContactComponent implements OnInit {
   }
 
   submit(){
+    this.isUploadingContact = true;
+    this.newContact = this.formGroup.value;
+    this.profileService.createContact(this.newContact).subscribe((payload) => {
+      this.isUploadingContact = false;
+    })
+    this._snackBar.open("Sent!", "Close");
 
   }
   openSnackBar() {

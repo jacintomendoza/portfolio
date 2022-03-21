@@ -3,7 +3,7 @@
         <mat-card data-aos="fade-right">
             <mat-card-content>
                 <mat-card-header>
-                    <mat-card-title class="title">Contact Me! (NA, please use email)</mat-card-title>
+                    <mat-card-title class="title">Contact Me!</mat-card-title>
                 </mat-card-header>
                 <form class="form" [formGroup]="formGroup">
 
@@ -28,12 +28,14 @@
     
     
                 <button style="background-color: var(--primary-color);" mat-button (click)="submit()">Send message</button>
+                <mat-spinner *ngIf="isUploadingContact"></mat-spinner>
                 <br>
                 <mat-card-title>-- OR --</mat-card-title>
                 <div class="alternatives">
                     <a style="color:blue" href="mailto:jacinto.josh.mendoza@gmail.com">jacinto.josh.mendoza@gmail.com</a>
                     <a style="cursor: pointer;" (click)="openSnackBar()" [cdkCopyToClipboard]="email"><i class="fa-solid fa-copy fa-2x" style="color: var(--primary-color);"></i></a>
                 </div>
+
             </mat-card-content>
         </mat-card>
     

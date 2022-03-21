@@ -1,14 +1,19 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Project } from './project.model';
+import { Project } from './projects/project.model';
+import { Contact } from './contact/contact.model';
+
+const contactBaseUrl = 'https://portfolio-contact-jacinto.herokuapp.com'
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProfileService {
 
-  constructor() { }
+  constructor(
+    private http: HttpClient
+  ) { }
 
   projects: any = [
   {
@@ -69,5 +74,9 @@ export class ProfileService {
 
   getProjects(): Observable<any[]> {
     return this.projects;
+  }
+
+  createContact(newContact: Contact): Observable<Contact> {
+    return this.http.post<Contact>(contactBaseUrl + '/addContact', newContact);
   }
 }
