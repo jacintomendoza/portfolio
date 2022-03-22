@@ -8,15 +8,15 @@ import { AngularMaterialModule } from './angular-material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { AboutComponent } from './about/about.component';
+import { AboutComponent } from './home/about/about.component';
 import { SignupComponent } from './signup/signup.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SigninComponent } from './signin/signin.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { EducationComponent } from './education/education.component';
+import { ProjectsComponent } from './home/projects/projects.component';
+import { EducationComponent } from './home/education/education.component';
 import { ParallaxDirective } from './parallax.directive';
-import { IntroComponent } from './intro/intro.component';
-import { ContactComponent } from './contact/contact.component';
+import { IntroComponent } from './home/intro/intro.component';
+import { ContactComponent } from './home/contact/contact.component';
 import { ClipboardModule } from '@angular/cdk/clipboard';
 
 

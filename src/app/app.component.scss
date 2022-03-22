@@ -8,7 +8,7 @@ mat-toolbar {
     z-index: 2;
     box-shadow: .5px 1px 5px black;
     transition: background-color .5s ease-in, opacity .5s ease-in;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 mat-toolbar:hover {

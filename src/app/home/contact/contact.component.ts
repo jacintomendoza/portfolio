@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Contact } from './contact.model';
-import { ProfileService } from '../profile.service';
+import { ProfileService } from '../../profile.service';
 
 @Component({
   selector: 'app-contact',

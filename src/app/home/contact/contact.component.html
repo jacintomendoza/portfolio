@@ -3,7 +3,7 @@
         <mat-card data-aos="fade-right">
             <mat-card-content>
                 <mat-card-header>
-                    <mat-card-title data-aos="flip-left" class="title">Contact Me!</mat-card-title>
+                    <mat-card-title data-aos="flip-left" class="section-titles">Contact Me!</mat-card-title>
                 </mat-card-header>
                 <form class="form" [formGroup]="formGroup">
 
@@ -27,7 +27,7 @@
     
     
     
-                <button style="background-color: var(--primary-color);" mat-button (click)="submit()">Send message</button>
+                <button style="background-color: white;" mat-button (click)="submit()">Send message</button>
                 <mat-spinner *ngIf="isUploadingContact"></mat-spinner>
                 <br>
                 <mat-card-title>-- OR --</mat-card-title>

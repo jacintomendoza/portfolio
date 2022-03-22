@@ -19,14 +19,18 @@
     flex-direction: column;
 }
 
-.title {
+.section-titles {
     font-size: 40px;
-}
-
-mat-card {
-    // width: 100vw;
 }
 
 .comment {
     height: 100px;
 }
+
+mat-card {
+    background-color: var(--primary-color);
+}
+
+// .container {
+//     background-color: var(--primary-color);
+// }

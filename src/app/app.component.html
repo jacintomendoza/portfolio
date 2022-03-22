@@ -23,12 +23,12 @@
 <!-- Sidenav -->
 
 <mat-sidenav-container>
-  <mat-sidenav mode="over" [(opened)]="opened" position="end">
+  <mat-sidenav mode="over" [(opened)]="opened" position="end" [autoFocus]="true">
     <mat-nav-list>
       <br><br>
       <a mat-list-item href="#about">About</a>
       <a mat-list-item href="#projects">Projects</a>
-      <a mat-list-item href="#education">Education</a>
+      <!-- <a mat-list-item href="#education">Education</a> -->
       <a mat-list-item href="#contact">Contact</a>
       <a mat-list-item routerLink="signup">Sign up</a>
       <a mat-list-item routerLink="signin">Sign in</a>
@@ -49,3 +49,5 @@
   </mat-sidenav-content>
   
 </mat-sidenav-container>
+
+<!-- <router-outlet></router-outlet> -->

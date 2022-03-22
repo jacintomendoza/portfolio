@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Project } from './projects/project.model';
-import { Contact } from './contact/contact.model';
+import { Project } from './home/projects/project.model';
+import { Contact } from './home/contact/contact.model';
 
 const contactBaseUrl = 'https://portfolio-contact-jacinto.herokuapp.com'
 
