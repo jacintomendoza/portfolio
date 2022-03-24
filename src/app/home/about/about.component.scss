@@ -1,65 +1,57 @@
 .about {
-    display: flex;
-    justify-content: center;
-    align-items: center; // vert center
-    height: 90vh;
-    // width: 100vw;
-    padding: 0px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  padding: 0px 100px;
 }
 
 .section-titles {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 mat-card {
-    max-width: 500px;
-    width: 60vw;
-    height: auto;
-    padding: 40px;
-    background-color: var(--primary-color);
-    color: white;
-
+  max-width: 500px;
+  width: 60vw;
+  height: auto;
+  padding: 40px;
+  background-color: var(--primary-color);
+  color: white;
 }
 
 .profile_img {
-    max-width: 400px;
-    width: 30vw;
-    height: auto;
-    border-radius: 100%;
-    transition: transform .5s ease;
-    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0);
-    z-index: 100;
-    flex: 1;
+  max-width: 400px;
+  width: 30vw;
+  height: auto;
+  border-radius: 100%;
+  transition: transform 0.5s ease;
+  box-shadow: 1px 1px 1px 1px rgb(0, 0, 0);
+  z-index: 100;
+  flex: 1;
 }
 
 .profile_img:hover {
-    transform: scale(1.1) rotate(1deg);
+  transform: scale(1.1) rotate(1deg);
 }
 
 a {
-    border: 3px solid;
-    border-color: #ffffff;
-    box-shadow: 1px 1px 1px 1px #ffffff;
+  border: 3px solid;
+  border-color: #ffffff;
+  box-shadow: 1px 1px 1px 1px #ffffff;
 }
 
-// .icons {
-//     display: flex;
-//     flex-direction: column;
-// }
-
 @media screen and (max-width: 600px) {
-    .about {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-    }
+  .about {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
 
-    mat-card {
-        width: 90vw;
-    }
+  mat-card {
+    width: 90vw;
+  }
 
-    .profile_img {
-        // height: 100vh;
-        width: 70vw;
-    }
+  .profile_img {
+    width: 70vw;
+  }
 }

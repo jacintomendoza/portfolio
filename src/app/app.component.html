@@ -1,18 +1,14 @@
 <mat-toolbar [class.mat-toolbar_change]="toolbar_variable">
   <mat-toolbar-row>
     <div class="left-side">
-      <!-- <img height = 30px src="assets/images/icon.png"> -->
       <h1 class="title">
         <a routerLink="home" style="text-decoration: none; color: inherit;">Jacinto Mendoza</a>
       </h1>
     </div>
 
     <div class="right-side">
-      <!-- <a mat-button routerLink="home">Home</a> -->
       <a mat-button href="#about">About</a>
       <a mat-button href="#projects">Projects</a>
-      <!-- <a mat-button href="#education">Education</a> -->
-      <!-- <a mat-button href="#skills">Skills</a> -->
       <a mat-button href="#contact">Contact</a>
 
       <button mat-icon-button><mat-icon (click)="opened=!opened">menu</mat-icon></button>
@@ -28,11 +24,9 @@
       <br><br>
       <a mat-list-item href="#about">About</a>
       <a mat-list-item href="#projects">Projects</a>
-      <!-- <a mat-list-item href="#education">Education</a> -->
       <a mat-list-item href="#contact">Contact</a>
       <a mat-list-item routerLink="signup">Sign up</a>
-      <a mat-list-item routerLink="signin">Sign in</a>
-      <!-- <a mat-list-item routerLink="/">Projects(NA)</a> -->
+      <a mat-list-item style="color: red" routerLink="signin">Sign in</a>
     </mat-nav-list>
   </mat-sidenav>
     

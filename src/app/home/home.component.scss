@@ -1,23 +1,19 @@
-// Welcome Page //////////////////////////////////////////////////
 .hero-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/bokeh_lights.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/images/bokeh_lights.jpg");
 }
 
-// Other //////////////////////////////////////////////////
-
 .section-titles {
-    font-size: 60px;
-    color: var(--primary-font-color);
-    -webkit-text-stroke-width: .7px;
-    -webkit-text-stroke-color: black;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: 5px 0px 0px 0px;
+  font-size: 60px;
+  color: var(--primary-font-color);
+  -webkit-text-stroke-width: 0.7px;
+  -webkit-text-stroke-color: black;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0px 0px 0px;
 }
 
 hr {
-    width: 50%;
+  width: 50%;
 }
-
-// Responsive //////////////////////////////////////////////////

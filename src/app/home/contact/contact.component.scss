@@ -1,36 +1,40 @@
-.contact {    
-    display: flex;
-    justify-content: center;
-    align-items: center; // vert center
-    height: 100vh;
-    // width: 100vw;
-    padding: 0px 30px;
-    i {
-        width: 10px;
-    }
-    a {
-        color: white;
-        margin: 0px 10px 0px 10px;
-    }
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; // vert center
+  height: 100vh;
+  padding: 0px 30px;
+  i {
+    width: 10px;
+  }
+  a {
+    color: white;
+    margin: 0px 10px 0px 10px;
+  }
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .section-titles {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .comment {
-    height: 100px;
+  height: 100px;
 }
 
 mat-card {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
+  width: 70vw;
 }
 
-// .container {
-//     background-color: var(--primary-color);
-// }
+// Responsive //////////////////////////////////////////////////
+@media screen and (max-width: 600px) {
+  mat-card {
+    width: 90vw;
+  }
+}

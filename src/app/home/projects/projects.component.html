@@ -1,10 +1,9 @@
-<!-- <section class="projects" [@openClose]="isOpen ? 'open' : 'closed'"> -->
 <section class="projects" id="projects">
     <h2 class="section-titles" data-aos="flip-left">Projects</h2>
     <hr>
     <div *ngFor="let project of projects">
         <mat-card class="card" data-aos="fade-up">
-            <img mat-card-image class="image" data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-duration="1000" src={{project.imgUrl}}>
+            <div class="image-container"><img mat-card-image class="image" data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-duration="1000" src={{project.imgUrl}}></div>
             <mat-card-content class="content" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
                 <mat-card-title >{{project.title}}</mat-card-title>
                 <mat-card-subtitle>{{project.topics}}</mat-card-subtitle>
