@@ -32,13 +32,13 @@ export class ContactComponent implements OnInit {
   }
 
   submit(){
+    console.log("Foo");
     this.isUploadingContact = true;
     this.newContact = this.formGroup.value;
     this.profileService.createContact(this.newContact).subscribe((payload) => {
       this.isUploadingContact = false;
       this._snackBar.open("Sent!", "Close");
     })
-
   }
   openSnackBar() {
     this._snackBar.open("Copied!", "Close");

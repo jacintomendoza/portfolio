@@ -1,0 +1,13 @@
+<section class="skills" id="skills">
+    <h2 class="section-titles" data-aos="flip-left">Skills</h2>
+    <hr>
+    <div *ngFor="let skill of skills">
+        <mat-card class="card" data-aos="fade-up">
+            <div class="image-container"><img mat-card-image class="image" data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-duration="1000" src={{skill.imgUrl}}></div>
+            <mat-card-content class="content" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
+
+
+            </mat-card-content>
+        </mat-card>
+    </div>
+</section>

@@ -4,7 +4,7 @@
             <mat-card-header>
                 <mat-card-title data-aos="flip-left" class="section-titles">Contact Me!</mat-card-title>
             </mat-card-header>
-            <form class="form" [formGroup]="formGroup">
+            <form class="form" [formGroup]="formGroup" (ngSubmit)="submit()">
 
                 <mat-form-field appearance="fill">
                     <mat-label>Full Name</mat-label>
@@ -22,11 +22,12 @@
                     <textarea matInput class="comment" formControlName="comment" placeholder="Leave a comment" maxlength="900" #input required></textarea>
                     <mat-hint align="end">{{input.value?.length || 0}}/900</mat-hint>
                 </mat-form-field>
+                
+                <button type="submit" style="background-color: white;" mat-button>Send message</button>
             </form>
 
 
 
-            <button style="background-color: white;" mat-button (click)="submit()">Send message</button>
             <mat-spinner *ngIf="isUploadingContact"></mat-spinner>
             <br>
             <mat-card-title>-- OR --</mat-card-title>

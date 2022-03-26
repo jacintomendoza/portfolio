@@ -18,6 +18,7 @@ import { ParallaxDirective } from './parallax.directive';
 import { IntroComponent } from './home/intro/intro.component';
 import { ContactComponent } from './home/contact/contact.component';
 import { ClipboardModule } from '@angular/cdk/clipboard';
+import { SkillsComponent } from './home/skills/skills.component';
 
 
 
@@ -32,7 +33,8 @@ import { ClipboardModule } from '@angular/cdk/clipboard';
     EducationComponent,
     ParallaxDirective,
     IntroComponent,
-    ContactComponent
+    ContactComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
