@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProfileService } from 'src/app/profile.service';
 
 @Component({
   selector: 'app-skills',
@@ -9,9 +10,14 @@ export class SkillsComponent implements OnInit {
 
   skills: any = [];
 
-  constructor() { }
+  constructor( private profileService: ProfileService ) { }
 
   ngOnInit(): void {
+    this.getSkills();
+  }
+
+  getSkills() {
+    this.skills = this.profileService.getSkills();
   }
 
 }

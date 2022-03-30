@@ -72,8 +72,75 @@ export class ProfileService {
   },
   ]
 
+  skills: any = [
+  {
+    id: 1,
+    skill: "Angular",
+    imgUrl: "assets/images/skills/angular.png",
+    proficiency: 5
+  },
+  {
+    id: 2,
+    skill: "Spring Boot",
+    imgUrl: "",
+    proficiency: 4
+  },
+  {
+    id: 3,
+    skill: "Node.js",
+    imgUrl: "",
+    proficiency: 4
+  },
+  {
+    id: 4,
+    skill: "Express.js",
+    imgUrl: "",
+    proficiency: 4
+  },
+  {
+    id: 5,
+    skill: "CSS",
+    imgUrl: "",
+    proficiency: 4
+  },
+  {
+    id: 6,
+    skill: "SCSS",
+    imgUrl: "",
+    proficiency: 4
+  },
+  {
+    id: 7,
+    skill: "TypeScript",
+    imgUrl: "",
+    proficiency: 4
+  },
+  {
+    id: 8,
+    skill: "CSS",
+    imgUrl: "",
+    proficiency: 3
+  },
+  {
+    id: 9,
+    skill: "Postman",
+    imgUrl: "",
+    proficiency: 5
+  },
+  {
+    id: 10,
+    skill: "npm",
+    imgUrl: "",
+    proficiency: 5
+  },
+  ]
+
   getProjects(): Observable<any[]> {
     return this.projects;
+  }
+  
+  getSkills(): Observable<any[]> {
+    return this.skills;
   }
 
   createContact(newContact: Contact): Observable<Contact> {
