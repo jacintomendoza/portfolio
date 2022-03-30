@@ -21,3 +21,11 @@
     width: 200px;
     height: 200px;
   }
+
+  .stars {
+    color: gold;
+    display: flex;
+    align-items: center;
+    text-shadow: 0 0 3px #000;
+    background-color: red;
+  }
