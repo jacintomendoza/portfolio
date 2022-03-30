@@ -15,8 +15,8 @@ ng new <name of app>
 
 Execution:
 ```
-npm run build
-npm run start
+    npm run build
+    npm run start
 ```
 Optional Execution:
 ```
@@ -25,19 +25,11 @@ nodemon
 
 ## Deploy via gh-pages
 ```
-npm run deploy
+npm run build
+`Change index base href in docs file to /portfolio/`
+git add .
+git commit -m <message>
+git push origin master
 ```
-package.json:
-```
-"predeploy": "npm run build",
-"deploy": "gh-pages -d build",
-```
-
-angular.json:
-```
-"baseHref": "/portfolio/",
-"outputPath": "build",
-```
-
 Notes:
 refreshing on ghpages caueses 404 error since ghpages doesn't support single page apps.  It doesn't have access to front-end routes.
