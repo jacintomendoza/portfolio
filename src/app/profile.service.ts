@@ -82,55 +82,55 @@ export class ProfileService {
   {
     id: 2,
     skill: "Spring Boot",
-    imgUrl: "",
+    imgUrl: "assets/images/skills/spring-boot.png",
     proficiency: 4
   },
   {
     id: 3,
     skill: "Node.js",
-    imgUrl: "",
+    imgUrl: "assets/images/skills/nodejs.png",
     proficiency: 4
   },
   {
     id: 4,
     skill: "Express.js",
-    imgUrl: "",
+    imgUrl: "assets/images/skills/expressjs.png",
     proficiency: 4
   },
   {
     id: 5,
     skill: "CSS",
-    imgUrl: "",
+    imgUrl: "assets/images/skills/css.png",
     proficiency: 4
   },
   {
     id: 6,
     skill: "SCSS",
-    imgUrl: "",
+    imgUrl: "assets/images/skills/scss.png",
     proficiency: 4
   },
   {
     id: 7,
     skill: "TypeScript",
-    imgUrl: "",
+    imgUrl: "assets/images/skills/typescript.png",
     proficiency: 4
   },
   {
     id: 8,
-    skill: "CSS",
-    imgUrl: "",
-    proficiency: 3
+    skill: "Postman",
+    imgUrl: "assets/images/skills/postman.png",
+    proficiency: 5
   },
   {
     id: 9,
-    skill: "Postman",
-    imgUrl: "",
+    skill: "npm",
+    imgUrl: "assets/images/skills/npm.png",
     proficiency: 5
   },
   {
     id: 10,
-    skill: "npm",
-    imgUrl: "",
+    skill: "React",
+    imgUrl: "assets/images/skills/react.png",
     proficiency: 5
   },
   ]

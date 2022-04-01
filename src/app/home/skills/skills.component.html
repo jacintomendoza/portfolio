@@ -1,39 +1,40 @@
 <section class="skills" id="skills">
     <h2 class="section-titles" data-aos="flip-left">Skills</h2>
     <hr>
-    <div *ngFor="let skill of skills">
-        <mat-card class="card" data-aos="fade-up">
-            <div class="image-container"><img mat-card-image class="image" data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-duration="1000" src={{skill.imgUrl}}></div>
-            <mat-card-content class="content" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
-                <mat-card-title>{{skill.skill}}</mat-card-title>
-                <!-- <mat-card-subtitle>{{skill.proficiency}}</mat-card-subtitle> -->
-                <div class="stars" *ngIf="skill.proficiency === 5">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="stars" *ngIf="skill.proficiency === 4">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="stars" *ngIf="skill.proficiency === 3">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="stars" *ngIf="skill.proficiency === 2">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="stars" *ngIf="skill.proficiency === 1">
-                    <i class="fa-solid fa-star"></i>
-                </div>
-            </mat-card-content>
-            TEST
-        </mat-card>
+    <div class="cards">
+        <div *ngFor="let skill of skills">
+            <mat-card class="card" data-aos="fade-up">
+                <div class="image-container"><img mat-card-image class="image" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000" src={{skill.imgUrl}}></div>
+                <mat-card-content class="content" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
+                    <mat-card-title>{{skill.skill}}</mat-card-title>
+                    <!-- <mat-card-subtitle>{{skill.proficiency}}</mat-card-subtitle> -->
+                    <div class="stars" *ngIf="skill.proficiency === 5">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="stars" *ngIf="skill.proficiency === 4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="stars" *ngIf="skill.proficiency === 3">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="stars" *ngIf="skill.proficiency === 2">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="stars" *ngIf="skill.proficiency === 1">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
     </div>
 </section>

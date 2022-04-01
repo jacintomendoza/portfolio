@@ -7,13 +7,32 @@
     padding: 10vh 5vw;
   }
 
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 0 0 0;
+    padding: 0 0 5px 0; // change to be more consistent?
     overflow: hidden;
-    margin: 0px 0px 20px 0;
+    margin: 20px 20px;
+    box-shadow: 0.5px 1px 5px black;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+  }
+
+  .image-container {
+    display: flex;
+    // background-color: red;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 4px 4px 4px;
   }
 
   .image {
@@ -24,8 +43,12 @@
 
   .stars {
     color: gold;
-    display: flex;
-    align-items: center;
     text-shadow: 0 0 3px #000;
-    background-color: red;
+  }
+
+  mat-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
