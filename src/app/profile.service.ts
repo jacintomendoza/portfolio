@@ -131,7 +131,7 @@ export class ProfileService {
     id: 10,
     skill: "React",
     imgUrl: "assets/images/skills/react.png",
-    proficiency: 5
+    proficiency: 2
   },
   ]
 
