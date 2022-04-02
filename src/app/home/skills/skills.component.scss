@@ -17,10 +17,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 0 5px 0; // change to be more consistent?
+    padding: 10px;
     overflow: hidden;
     margin: 20px 20px;
     box-shadow: 0.5px 1px 5px black;
+    height: 20vh;
   }
 
   .card:hover {
@@ -52,3 +53,23 @@
     align-items: center;
     justify-content: center;
   }
+
+  @media screen and (max-width: 600px) {    
+    .skills {
+      padding: 0vh 0vw;
+    }
+    
+    .card {
+      display: flex;
+      flex-direction: column;
+      max-height: none;
+      height: auto;
+    }
+  
+    .image-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

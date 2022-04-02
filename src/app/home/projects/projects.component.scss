@@ -10,10 +10,18 @@
 .card {
   display: flex;
   flex-direction: row;
-  padding: 0 0 0 0;
+  padding: 20px;
   overflow: hidden;
   margin: 0px 0px 20px 0;
   max-height: 40vh;
+  max-width: 1000px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .image {
