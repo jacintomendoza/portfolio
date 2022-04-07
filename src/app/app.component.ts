@@ -19,7 +19,7 @@ export class AppComponent {
   // Mat-toolbar adjustments
   @HostListener("window:scroll", [])
   onWindowScroll(){
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
     if (window.scrollY > 100){
       this.toolbar_variable=true;
     }

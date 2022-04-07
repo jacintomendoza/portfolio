@@ -1,13 +1,14 @@
 // Toolbar //////////////////////////////////////////////////
 
 mat-toolbar {
-  background-color: var(--primary-color);
+  background-color: white;
   position: fixed;
   top: 0;
   display: flex;
   z-index: 2;
   box-shadow: 0.5px 1px 5px black;
-  transition: background-color 0.5s ease-in, opacity 0.5s ease-in;
+  transition: background-color 2s ease-in, opacity 0.5s ease-in;
+  opacity: 5%;
 }
 
 mat-toolbar:hover {
@@ -15,8 +16,8 @@ mat-toolbar:hover {
 }
 
 .mat-toolbar_change {
-  background-color: white;
-  opacity: 20%;
+  background-color: var(--primary-color);
+  opacity: 100%;
 }
 
 mat-toolbar-row {
@@ -43,6 +44,7 @@ mat-sidenav-container {
 mat-sidenav {
   background-color: var(--secondary-color);
   padding: 16px;
+  position: fixed;
 }
 
 mat-sidenav-content {

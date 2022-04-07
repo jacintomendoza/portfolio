@@ -2,7 +2,7 @@
   <mat-toolbar-row>
     <div class="left-side">
       <h1 class="title">
-        <a routerLink="home" style="text-decoration: none; color: inherit;">Jacinto Mendoza</a>
+        <a href="#intro" style="text-decoration: none; color: inherit;">Jacinto Mendoza</a>
       </h1>
     </div>
 
@@ -27,18 +27,18 @@
       <a mat-list-item href="#projects">Projects</a>
       <a mat-list-item href="#contact">Contact</a>
       <a mat-list-item href="#skills">Skills</a>
-      <a mat-list-item routerLink="signup">Sign up</a>
-      <a mat-list-item style="color: red" routerLink="signin">Sign in</a>
+      <!-- <a mat-list-item routerLink="signup">Sign up</a>
+      <a mat-list-item style="color: red" routerLink="signin">Sign in</a> -->
     </mat-nav-list>
   </mat-sidenav>
     
-  <mat-sidenav-content fullscreen>
+  <mat-sidenav-content > <!-- fullscreen -->
     <router-outlet></router-outlet>
     <footer>
       <hr>
       <p>Copyright &copy; 2022 All Rights Reserved by Jacinto Mendoza</p>
       <div class=footer-links>
-        <a routerLink="/home">Home</a>
+        <a href="#intro">Home</a>
       </div>
     </footer>
   </mat-sidenav-content>

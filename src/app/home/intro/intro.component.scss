@@ -1,7 +1,7 @@
 .hero-container {
     height: 100vh;
     position: relative;
-    z-index: -1;
+    // z-index: -1;
 }
 
 .hero-image {
@@ -13,6 +13,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
+    display: flex;
+    justify-content: center;
 }
 
 .hero-text {
@@ -36,3 +38,24 @@
     font-size: 17px;
 }
 
+.arrow {
+    color: white;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    animation: arrow-pulse .8s infinite ease-in-out;
+    transition: color 0.5s ease;
+    text-decoration: none;
+    animation-timing-function: linear;
+}
+
+.arrow:hover {
+    color: #77a9fa;
+}
+
+@keyframes arrow-pulse {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-.5vh); }
+    100% { transform: translateY(0); }
+}
