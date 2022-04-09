@@ -32,7 +32,7 @@ export class ProfileService {
     topics: ["Angular", "Node.js", "Express", "Material", "PostgreSQL"],
     imgUrl: "assets/images/angular.png",
     repoLink: "https://github.com/falconInvestments/falcon-frontend",
-    liveLink: "https://falcon-investments.herokuapp.com/home"
+    liveLink: "https://jacintomendoza.github.io/falconinvestments/"
   },
   {
     id: 3,
