@@ -3,10 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 90vh;
-}
-
-.section-titles {
-  font-size: 60px;
+  // background-color: pink;
 }
 
 mat-card {
@@ -19,13 +16,12 @@ mat-card {
 }
 
 .description {
-  font-size: calc(11px + .11vh);
+  font-size: calc(14px + .11vw);
 }
 
 .profile_img {
   max-width: 40vw;
   width: 30vw;
-  // height: auto;
   border-radius: 100%;
   transition: transform 0.5s ease;
   box-shadow: 1px 1px 1px 1px rgb(0, 0, 0);
@@ -73,9 +69,9 @@ a {
 
   .profile_img {
     max-width: none;
-    border-radius: 10%;
-    width: 100%;
-    height: 100%;
+    // border-radius: 10%;
+    width: 80%;
+    height: 80%;
     background-size: contain;
   }
 }

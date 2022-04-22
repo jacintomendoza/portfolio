@@ -2,8 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 16px;
-    // background-color: var(--background-color);
     padding: 10vh 5vw;
   }
 
@@ -17,7 +15,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px; // change to be more consistent?
+    padding: 20px;
     overflow: hidden;
     margin: 20px 20px;
     box-shadow: 0.5px 1px 5px black;
