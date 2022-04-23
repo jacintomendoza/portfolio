@@ -12,6 +12,9 @@
                     <div class="subtitle-container">
                         <mat-card-subtitle class="titles" *ngFor="let title of experience.title; let i = index">{{title}}</mat-card-subtitle>
                     </div>
+                    <mat-card-subtitle>
+                        {{experience.startDate}} - {{experience.endDate}}
+                    </mat-card-subtitle>
                 </div>
             </div>
             <div class="description" *ngFor="let description of experience.description">

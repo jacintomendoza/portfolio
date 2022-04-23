@@ -21,8 +21,8 @@
 
   .image {
     margin: 0 0 0 0;
-    max-width: 50px;
-    min-width: 50px;
+    max-width: 80px;
+    min-width: 80px;
   }
 
   mat-card-title {
@@ -34,13 +34,18 @@
     flex-wrap: wrap;
   }
 
-  .titles {
-    // background-color: var(--primary-color);
-    // box-shadow: .5px .5px 2px black;
+  mat-card-subtitle {
+ 
     margin: 0 2px !important;
-    // padding: 1px 2px;
-    // border-radius: 15%;
-    // color: white;
+
+  }
+
+  .titles {
+    background-color: var(--primary-color);
+    box-shadow: .5px .5px 2px black;
+    padding: 1px 2px;
+    border-radius: 4%;
+    color: white;
   }
 
   .description {
