@@ -1,0 +1,24 @@
+<section class="experience" id="experience">
+    <h2 class="section-titles" data-aos="flip-left">Professional Experience</h2>
+    <hr>
+    <div *ngFor="let experience of experiences">
+        <mat-card class="card" data-aos="fade-up">
+            <div class="header">
+                <div class="col1">
+                    <img mat-card-image class="image" data-aos-anchor-placement="top-center" src={{experience.imgUrl}}>
+                </div>
+                <div class="col2">
+                    <mat-card-title>{{experience.company}}</mat-card-title>
+                    <div class="subtitle-container">
+                        <mat-card-subtitle class="titles" *ngFor="let title of experience.title; let i = index">{{title}}</mat-card-subtitle>
+                    </div>
+                </div>
+            </div>
+            <div class="description" *ngFor="let description of experience.description">
+                <ul>
+                    <li>{{description}}</li>
+                </ul>
+            </div>
+        </mat-card>
+    </div>
+</section>

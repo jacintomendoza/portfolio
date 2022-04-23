@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Project } from './home/projects/project.model';
 import { Contact } from './home/contact/contact.model';
 
 const contactBaseUrl = 'https://portfolio-contact-jacinto.herokuapp.com'
@@ -81,51 +80,51 @@ export class ProfileService {
   },
   {
     id: 2,
-    skill: "Spring Boot",
-    imgUrl: "assets/images/skills/spring-boot.png",
-    proficiency: 4
-  },
-  {
-    id: 3,
-    skill: "Node.js",
-    imgUrl: "assets/images/skills/nodejs.png",
-    proficiency: 4
-  },
-  {
-    id: 4,
-    skill: "Express.js",
-    imgUrl: "assets/images/skills/expressjs.png",
-    proficiency: 4
-  },
-  {
-    id: 5,
-    skill: "CSS",
-    imgUrl: "assets/images/skills/css.png",
-    proficiency: 4
-  },
-  {
-    id: 6,
-    skill: "SCSS",
-    imgUrl: "assets/images/skills/scss.png",
-    proficiency: 4
-  },
-  {
-    id: 7,
-    skill: "TypeScript",
-    imgUrl: "assets/images/skills/typescript.png",
-    proficiency: 4
-  },
-  {
-    id: 8,
     skill: "Postman",
     imgUrl: "assets/images/skills/postman.png",
     proficiency: 5
   },
   {
-    id: 9,
+    id: 3,
     skill: "npm",
     imgUrl: "assets/images/skills/npm.png",
     proficiency: 5
+  },
+  {
+    id: 4,
+    skill: "Spring Boot",
+    imgUrl: "assets/images/skills/spring-boot.png",
+    proficiency: 4
+  },
+  {
+    id: 5,
+    skill: "Node.js",
+    imgUrl: "assets/images/skills/nodejs.png",
+    proficiency: 4
+  },
+  {
+    id: 6,
+    skill: "Express.js",
+    imgUrl: "assets/images/skills/expressjs.png",
+    proficiency: 4
+  },
+  {
+    id: 7,
+    skill: "CSS",
+    imgUrl: "assets/images/skills/css.png",
+    proficiency: 4
+  },
+  {
+    id: 8,
+    skill: "SCSS",
+    imgUrl: "assets/images/skills/scss.png",
+    proficiency: 4
+  },
+  {
+    id: 9,
+    skill: "TypeScript",
+    imgUrl: "assets/images/skills/typescript.png",
+    proficiency: 4
   },
   {
     id: 10,
@@ -135,12 +134,28 @@ export class ProfileService {
   },
   ]
 
+  experiences: any = [
+    {
+      id: 1,
+      company: "Talent Path",
+      title: ["Data Engineer", "Full Stack Engineer"],
+      description: ["Completed a hands-on ten-week program that utilized multiple components of AWS such as Redshift, RDS, Lambda, Glue, EMR, S3, DynamoDB, and QuickSight.",  "Created an end-to-end ETL pipeline that creates analytical insights based on semi and structured data.", "Completed an eleven-week full stack program utilizes technologies such as the front-end Angular framework and the backend Node.js environment with the Express.js framework.",  "Built an angular application with a mock motorcycle API built with Sprint Boot.",  "Backend has full CRUD functionality and also includes the ability to search for items based off end-point search criteria.",  "Created a prototype finance web application that utilizes Angular, Node.js, Material-UI, PostgreSQL, MongoDB and Express.js."],
+      imgUrl: "assets/images/talentpath.png",
+      startDate: "July 2021",
+      endDate: "April 2022"
+    }
+  ]
+
   getProjects(): Observable<any[]> {
     return this.projects;
   }
   
   getSkills(): Observable<any[]> {
     return this.skills;
+  }
+
+  getExperiences(): Observable<any[]> {
+    return this.experiences;
   }
 
   createContact(newContact: Contact): Observable<Contact> {
