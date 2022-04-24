@@ -16,22 +16,31 @@ export class ProfileService {
 
   projects: any = [
   {
-    id: 1,
-    title: "ETL Pipeline",
-    description: "Created an end-to-end batch ETL solution via Amazon Web Services (AWS) from an existing on-premises IT infrastructure. This project managed raw data such as semi-structured and structured data to be transformed and loaded using multiple AWS services such as Redshift, DynamoDB, RDS, EMR, QuickSight, and Lambda for data analytics.",
-    topics: ["AWS"],
-    imgUrl: "assets/images/aws.png",
-    repoLink: "",
-    liveLink: ""
-  },
-  {
-    id: 2,
+    id: 0,
     title: "Finance Web Application",
     description: "Developed a prototype finance web application as part of a capstone project that utilizes the front-end web application framework, Angular, and the back-end JavaScript runtime environment, Node.js.",
     topics: ["Angular", "Node.js", "Express", "Material", "PostgreSQL"],
     imgUrl: "assets/images/angular.png",
     repoLink: "https://github.com/falconInvestments/falcon-frontend",
     liveLink: "https://jacintomendoza.github.io/falconinvestments/"
+  },
+  {
+    id: 1,
+    title: "Motorcycle Inventory Web Application",
+    description: "Built an angular application with a mock motorcycle API built with Sprint Boot. Backend has full CRUD functionality and also includes the ability to search for items based off end-point search criteria.",
+    topics: ["Angular", "Spring Boot", "MongoDB"],
+    imgUrl: "assets/images/angular.png",
+    repoLink: "https://github.com/jacintomendoza/moto-inventory-project",
+    liveLink: "https://moto-inventory.web.app/"
+  },
+  {
+    id: 2,
+    title: "ETL Pipeline",
+    description: "Created an end-to-end batch ETL solution via Amazon Web Services (AWS) from an existing on-premises IT infrastructure. This project managed raw data such as semi-structured and structured data to be transformed and loaded using multiple AWS services such as Redshift, DynamoDB, RDS, EMR, QuickSight, and Lambda for data analytics.",
+    topics: ["AWS"],
+    imgUrl: "assets/images/aws.png",
+    repoLink: "",
+    liveLink: ""
   },
   {
     id: 3,
@@ -136,13 +145,22 @@ export class ProfileService {
 
   experiences: any = [
     {
-      id: 1,
+      id: 0,
       company: "Talent Path",
       title: ["Data Engineer", "Full Stack Engineer"],
       description: ["Completed a hands-on ten-week program that utilized multiple components of AWS such as Redshift, RDS, Lambda, Glue, EMR, S3, DynamoDB, and QuickSight.",  "Created an end-to-end ETL pipeline that creates analytical insights based on semi and structured data.", "Completed an eleven-week full stack program utilizes technologies such as the front-end Angular framework and the backend Node.js environment with the Express.js framework.",  "Built an angular application with a mock motorcycle API built with Sprint Boot.",  "Backend has full CRUD functionality and also includes the ability to search for items based off end-point search criteria.",  "Created a prototype finance web application that utilizes Angular, Node.js, Material-UI, PostgreSQL, MongoDB and Express.js."],
       imgUrl: "assets/images/talentpath.png",
       startDate: "July 2021",
       endDate: "April 2022"
+    },
+    {
+      id: 1,
+      company: "Fiserv",
+      title: ["Software Development Engineering - Professional II"],
+      description: ["No information available at this current time."],
+      imgUrl: "assets/images/fiserv.jpg",
+      startDate: "May 2022",
+      endDate: "Present"
     }
   ]
 

@@ -8,6 +8,8 @@ import { ProfileService } from '../../profile.service';
 })
 export class ProjectsComponent implements OnInit {
 
+  index = 6;
+
   constructor(
     private profileService: ProfileService
   ) { }
@@ -20,6 +22,10 @@ export class ProjectsComponent implements OnInit {
 
   getProjects() {
     this.projects = this.profileService.getProjects();
+  }
+
+  showAll(){
+    this.index = 999;
   }
 
 }

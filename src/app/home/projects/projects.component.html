@@ -1,10 +1,10 @@
 <section class="projects" id="projects">
     <h2 class="section-titles" data-aos="flip-left">Projects</h2>
     <hr>
-    <div *ngFor="let project of projects">
+    <div *ngFor="let project of projects.slice(0,this.index)">
         <mat-card class="card" data-aos="fade-up">
-            <div class="image-container"><img mat-card-image class="image" data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-duration="1000" src={{project.imgUrl}}></div>
-            <mat-card-content class="content" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
+            <div class="image-container"><img mat-card-image class="image" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000" src={{project.imgUrl}}></div>
+            <mat-card-content class="content" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
                 <mat-card-title class="title">{{project.title}}</mat-card-title>
                 <div class="subtitle-container">
                     <mat-card-subtitle class="subtitle" *ngFor="let topic of project.topics">{{topic}}</mat-card-subtitle>
@@ -16,5 +16,9 @@
                 </mat-card-actions>
             </mat-card-content>
         </mat-card>
+    </div>
+
+    <div *ngIf="index == 6">
+        <button mat-button (click)="showAll()">Show All</button>
     </div>
 </section>
