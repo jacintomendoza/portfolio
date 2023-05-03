@@ -157,7 +157,10 @@ export class ProfileService {
       id: 1,
       company: "Fiserv",
       title: ["Software Development Engineering - Professional II"],
-      description: ["No information available at this current time."],
+      description: ["Contributing to the modernization and development of DNA, Fiserv’s core banking platform, using the Angular framework and agile development processes.",
+      "Collaborating with cross-functional teams to ensure seamless integration of the front-end UI and the back-end services layer.",
+      "Working independently to support software through the entire software development lifecycle, diagnosing and resolving performance issues.",
+      "Ensuring timely and effective delivery of bug fixes and feature implementations as per stakeholder requirements while adhering to the project’s flexibility and scalability requirements."],
       imgUrl: "assets/images/fiserv.jpg",
       startDate: "May 2022",
       endDate: "Present"
