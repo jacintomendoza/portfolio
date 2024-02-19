@@ -101,21 +101,21 @@ export class ProfileService {
   },
   {
     id: 4,
-    skill: "Spring Boot",
-    imgUrl: "assets/images/skills/spring-boot.png",
+    skill: "React",
+    imgUrl: "assets/images/skills/react.png",
     proficiency: 4
   },
   {
     id: 5,
-    skill: "Node.js",
-    imgUrl: "assets/images/skills/nodejs.png",
-    proficiency: 4
+    skill: "Spring Boot",
+    imgUrl: "assets/images/skills/spring-boot.png",
+    proficiency: 3
   },
   {
     id: 6,
-    skill: "Express.js",
-    imgUrl: "assets/images/skills/expressjs.png",
-    proficiency: 4
+    skill: "Node.js",
+    imgUrl: "assets/images/skills/nodejs.png",
+    proficiency: 3
   },
   {
     id: 7,
@@ -125,22 +125,22 @@ export class ProfileService {
   },
   {
     id: 8,
+    skill: "Express.js",
+    imgUrl: "assets/images/skills/expressjs.png",
+    proficiency: 3
+  },
+  {
+    id: 9,
     skill: "SCSS",
     imgUrl: "assets/images/skills/scss.png",
     proficiency: 4
   },
   {
-    id: 9,
+    id: 10,
     skill: "TypeScript",
     imgUrl: "assets/images/skills/typescript.png",
     proficiency: 4
-  },
-  {
-    id: 10,
-    skill: "React",
-    imgUrl: "assets/images/skills/react.png",
-    proficiency: 2
-  },
+  }
   ]
 
   experiences: any = [
