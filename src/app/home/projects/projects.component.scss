@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--background-color2);
+  background-color: var(--background-color1);
   padding: 10vh 5vw;
 }
 
@@ -12,8 +12,8 @@
   padding: 20px;
   overflow: hidden;
   margin: 0px 0px 20px 0;
-  max-height: 40vh;
-  max-width: 1000px;
+  min-height: 20vh;
+  width: 70vw;
 }
 
 .image-container {

@@ -2,14 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto;
-  // background-color: pink;
+  padding: 10vh 5vw;
 }
 
 mat-card {
-  max-width: 40vw;
-  // width: 80vw;
-  height: auto;
+  max-width: 60vw;
   padding: 20px 40px;
   background-color: var(--primary-color);
   color: white;
@@ -69,7 +66,6 @@ a {
 
   .profile_img {
     max-width: none;
-    // border-radius: 10%;
     width: 80%;
     height: 80%;
     background-size: contain;
