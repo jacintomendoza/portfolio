@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: auto;
   // background-color: pink;
 }
 
@@ -10,7 +10,7 @@ mat-card {
   max-width: 40vw;
   // width: 80vw;
   height: auto;
-  padding: 40px;
+  padding: 20px 40px;
   background-color: var(--primary-color);
   color: white;
 }
@@ -51,7 +51,7 @@ a {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .about {
     display: flex;
     flex-direction: column;
