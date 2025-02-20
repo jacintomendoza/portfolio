@@ -38,6 +38,3 @@ angular.json:
 "baseHref": "/portfolio/",
 "outputPath": "build",
 ```
-
-Notes:
-refreshing on ghpages caueses 404 error since ghpages doesn't support single page apps.  It doesn't have access to front-end routes.
